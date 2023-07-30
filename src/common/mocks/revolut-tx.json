@@ -1,0 +1,162 @@
+[
+  {
+    "id": "tr_0987654321",
+    "created_at": "2022-03-21T14:16:32.000Z",
+    "completed_at": "2022-03-21T14:18:32.000Z",
+    "state": "COMPLETED",
+    "amount": {
+      "value": "78.99",
+      "currency": "EUR"
+    },
+    "merchant": null,
+    "counterparty": {
+      "id": "acc_0987654321",
+      "name": "John Doe"
+    },
+    "reference": "SEPA-0987654321"
+  },
+  {
+    "id": "tr_1357908642",
+    "created_at": "2022-03-21T14:16:32.000Z",
+    "completed_at": "2022-03-21T14:18:32.000Z",
+    "state": "COMPLETED",
+    "amount": {
+      "value": "-12.50",
+      "currency": "EUR"
+    },
+    "merchant": null,
+    "counterparty": {
+      "id": "acc_1357908642",
+      "name": "Sarah Johnson"
+    },
+    "reference": "SEPA-1357908642"
+  },
+  {
+    "id": "tr_2468013579",
+    "created_at": "2022-03-21T14:16:32.000Z",
+    "completed_at": "2022-03-21T14:18:32.000Z",
+    "state": "COMPLETED",
+    "amount": {
+      "value": "-6.95",
+      "currency": "EUR"
+    },
+    "merchant": null,
+    "counterparty": {
+      "id": "acc_2468013579",
+      "name": "Michael Brown"
+    },
+    "reference": "SEPA-2468013579"
+  },
+  {
+    "id": "tr_3692581470",
+    "created_at": "2022-03-21T14:16:32.000Z",
+    "completed_at": "2022-03-21T14:18:32.000Z",
+    "state": "COMPLETED",
+    "amount": {
+      "value": "-45.67",
+      "currency": "EUR"
+    },
+    "merchant": null,
+    "counterparty": {
+      "id": "acc_3692581470",
+      "name": "Alexandra Lee"
+    },
+    "reference": "SEPA-3692581470"
+  },
+  {
+    "id": "tr_4710963528",
+    "created_at": "2022-03-21T14:16:32.000Z",
+    "completed_at": "2022-03-21T14:18:32.000Z",
+    "state": "COMPLETED",
+    "amount": {
+      "value": "220.00",
+      "currency": "EUR"
+    },
+    "merchant": null,
+    "counterparty": {
+      "id": "acc_4710963528",
+      "name": "David Johnson"
+    },
+    "reference": "SEPA-4710963528"
+  },
+  {
+    "id": "tr_1234567901",
+    "created_at": "2022-03-23T10:30:20.000Z",
+    "completed_at": "2022-03-23T10:32:18.000Z",
+    "state": "COMPLETED",
+    "amount": {
+      "value": "120.00",
+      "currency": "EUR"
+    },
+    "merchant": null,
+    "counterparty": {
+      "id": "acc_1234567901",
+      "name": "John Doe"
+    },
+    "reference": "SEPA-0987654321"
+  },
+  {
+    "id": "tr_1234567902",
+    "created_at": "2022-03-23T12:05:10.000Z",
+    "completed_at": "2022-03-23T12:07:23.000Z",
+    "state": "COMPLETED",
+    "amount": {
+      "value": "-68.50",
+      "currency": "EUR"
+    },
+    "merchant": null,
+    "counterparty": {
+      "id": "acc_1234567902",
+      "name": "Sarah Lee"
+    },
+    "reference": "SEPA-1122334455"
+  },
+  {
+    "id": "tr_1234567903",
+    "created_at": "2022-03-24T16:10:02.000Z",
+    "completed_at": "2022-03-24T16:12:45.000Z",
+    "state": "COMPLETED",
+    "amount": {
+      "value": "-10.00",
+      "currency": "EUR"
+    },
+    "merchant": null,
+    "counterparty": {
+      "id": "acc_1234567903",
+      "name": "David Lee"
+    },
+    "reference": "SEPA-9876543210"
+  },
+  {
+    "id": "tr_1234567904",
+    "created_at": "2022-03-25T11:30:00.000Z",
+    "completed_at": "2022-03-25T11:32:12.000Z",
+    "state": "COMPLETED",
+    "amount": {
+      "value": "500.00",
+      "currency": "EUR"
+    },
+    "merchant": null,
+    "counterparty": {
+      "id": "acc_1234567904",
+      "name": "Lucas Brown"
+    },
+    "reference": "SEPA-4567891230"
+  },
+  {
+    "id": "tr_1234567905",
+    "created_at": "2022-03-26T14:40:30.000Z",
+    "completed_at": "2022-03-26T14:42:49.000Z",
+    "state": "COMPLETED",
+    "amount": {
+      "value": "20.00",
+      "currency": "EUR"
+    },
+    "merchant": null,
+    "counterparty": {
+      "id": "acc_1234567905",
+      "name": "Maria Hernandez"
+    },
+    "reference": "SEPA-7418529630"
+  }
+]

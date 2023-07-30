@@ -1,0 +1,92 @@
+[
+  {
+    "id": "6d4c34fc-94e7-4e52-8a36-9c40b102ecfc",
+    "currency": "EUR",
+    "amount": "-25.00",
+    "direction": "OUT",
+    "narrative": "Payment to Jane Smith",
+    "created": "2022-03-21T14:16:32.000Z",
+    "reference": "SEPA-1234567890"
+  },
+  {
+    "id": "f1434237-ea1f-4cb7-a3d2-8e7c31b5455c",
+    "currency": "EUR",
+    "amount": "-100.00",
+    "direction": "OUT",
+    "narrative": "Monthly rent payment",
+    "created": "2023-04-04T09:12:00.000Z",
+    "reference": "SEPA-1234567891"
+  },
+  {
+    "id": "a4b4c3aa-6935-4ddc-85b5-5a5c2d935a1f",
+    "currency": "EUR",
+    "amount": "-35.50",
+    "direction": "OUT",
+    "narrative": "Dinner with friends",
+    "created": "2023-04-02T20:30:00.000Z",
+    "reference": "SEPA-1234567892"
+  },
+  {
+    "id": "902f06f1-c3ce-42fc-b85c-b93b0fc0be9f",
+    "currency": "EUR",
+    "amount": "-12.99",
+    "direction": "OUT",
+    "narrative": "Online shopping",
+    "created": "2023-04-01T11:11:00.000Z",
+    "reference": "SEPA-1234567893"
+  },
+  {
+    "id": "e90a5c5f-4e80-4d4f-a1f3-7e8825cf5fb5",
+    "currency": "EUR",
+    "amount": "45.00",
+    "direction": "IN",
+    "narrative": "Refund for returned item",
+    "created": "2023-04-03T08:17:00.000Z",
+    "reference": "SEPA-1234567894"
+  },
+  {
+    "id": "bb6ab7c6-b903-4bdf-80e2-36eb2f14b8a8",
+    "currency": "EUR",
+    "amount": "-20.00",
+    "direction": "OUT",
+    "narrative": "Haircut",
+    "created": "2023-04-02T14:23:00.000Z",
+    "reference": "SEPA-1234567895"
+  },
+  {
+    "id": "45f8b15e-12c7-4411-8f47-f6c9a6eb22c6",
+    "currency": "EUR",
+    "amount": "500.00",
+    "direction": "IN",
+    "narrative": "Salary payment",
+    "created": "2023-04-01T13:47:00.000Z",
+    "reference": "SEPA-1234567896"
+  },
+  {
+    "id": "7a2b8a67-b7aa-4e50-a833-0e5bcf8b17a6",
+    "currency": "EUR",
+    "amount": "-72.40",
+    "direction": "OUT",
+    "narrative": "Grocery shopping",
+    "created": "2023-04-04T10:05:00.000Z",
+    "reference": "SEPA-1234567897"
+  },
+  {
+    "id": "e2d3dd0d-3f36-4339-8e16-3fb3ee59c342",
+    "currency": "EUR",
+    "amount": "-15.00",
+    "direction": "OUT",
+    "narrative": "Public transportation fare",
+    "created": "2023-04-01T08:55:00.000Z",
+    "reference": "SEPA-1234567898"
+  },
+  {
+    "id": "2f1a86d9-9717-4a33-af3e-858cbb1265f5",
+    "currency": "EUR",
+    "amount": "-120.00",
+    "direction": "OUT",
+    "narrative": "Gym membership fee",
+    "created": "2023-04-03T17:30:00.000Z",
+    "reference": "SEPA-1234567899"
+  }
+]

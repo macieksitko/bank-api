@@ -1,0 +1,92 @@
+[
+  {
+    "id": "tx_00001YpBqNqL8mWnKf4t2Z",
+    "created": "2023-04-05T09:12:00.000Z",
+    "description": "Monthly rent payment",
+    "amount": -120000,
+    "currency": "EUR",
+    "metadata": {
+      "reference": "SEPA-0987654321"
+    }
+  },
+  {
+    "id": "tx_00002EhXqVqJ4nWjKf4v5R",
+    "created": "2023-04-04T14:30:00.000Z",
+    "description": "Electricity bill payment",
+    "amount": -9500,
+    "currency": "EUR",
+    "metadata": {
+      "reference": "SEPA-0987654322"
+    }
+  },
+  {
+    "id": "tx_00003DkVpHjP9oXnTf7s8Q",
+    "created": "2023-04-03T11:20:00.000Z",
+    "description": "Supermarket purchase",
+    "amount": -8760,
+    "currency": "EUR",
+    "metadata": {
+      "reference": "SEPA-0987654323"
+    }
+  },
+  {
+    "id": "tx_00004TrWjKvL6dYmKg9t1F",
+    "created": "2023-04-02T16:40:00.000Z",
+    "description": "Internet service payment",
+    "amount": -3990,
+    "currency": "EUR",
+    "metadata": {
+      "reference": "SEPA-0987654324"
+    }
+  },
+  {
+    "id": "tx_00005TgGcNkU1mZnLf2s7D",
+    "created": "2023-04-01T08:00:00.000Z",
+    "description": "Salary deposit",
+    "amount": 210000,
+    "currency": "EUR",
+    "metadata": {
+      "reference": "SEPA-0987654325"
+    }
+  },
+  {
+    "id": "tx_00006FqMjDcX4yWmKv5r2S",
+    "created": "2022-12-31T23:59:00.000Z",
+    "description": "Charitable donation",
+    "amount": -5000,
+    "currency": "EUR",
+    "metadata": {
+      "reference": "SEPA-0987654326"
+    }
+  },
+  {
+    "id": "tx_00007QhRmGyZ9pLnVf1j6T",
+    "created": "2022-12-25T12:00:00.000Z",
+    "description": "Christmas gift purchase",
+    "amount": -18000,
+    "currency": "EUR",
+    "metadata": {
+      "reference": "SEPA-0987654327"
+    }
+  },
+  {
+    "id": "tx_00008RpHcLmX6dGtKv9t4W",
+    "created": "2022-12-20T19:00:00.000Z",
+    "description": "Restaurant bill payment",
+    "amount": -7800,
+    "currency": "EUR",
+    "metadata": {
+      "reference": "SEPA-0987654328"
+    }
+  },
+  {
+    "id": "tx_00009WsVnLqZ3mKpGf4y8D",
+    "created": "2022-12-15T10:30:00.000Z",
+    "description": "Car repair service payment",
+    "amount": -21500,
+    "currency": "EUR",
+    "metadata": {
+      "reference": "SEPA-0987654329"
+    }
+  }
+]
