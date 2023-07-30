@@ -3,7 +3,7 @@ import { TransactionsService } from './transactions.service';
 import { GetTransactionsDto, GetTransactionsParams } from './transactions.dto';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
 
-@Controller('ransactions')
+@Controller('transactions')
 @ApiTags('Transactions')
 export class TransactionsController {
   constructor(private transactionsService: TransactionsService) {}
