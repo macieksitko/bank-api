@@ -4,6 +4,7 @@ import { HttpService } from '@nestjs/axios';
 import {
   Transaction,
   TransactionSource,
+  assignTransactionType,
 } from 'src/common/entites/transaction.entity';
 import { STERLING_TXS } from 'src/common/mocks';
 import { lastValueFrom, map } from 'rxjs';
@@ -41,6 +42,8 @@ export class SterlingBankService extends ITransactionService {
       responseData,
     );
 
+    if (_transactions.length <= 0) return [];
+
     _transactions.forEach(async (transaction) => {
       const errors = await validate(transaction, {
         validationError: { target: false },
@@ -64,7 +67,7 @@ export class SterlingBankService extends ITransactionService {
         value: Number(transaction.amount),
         currency: CurrencyCode[transaction.currency],
       },
-      type: null,
+      type: assignTransactionType(transaction.amount),
       reference: transaction.reference,
       metadata: { source: TransactionSource.SterlingBank },
     } as Transaction;

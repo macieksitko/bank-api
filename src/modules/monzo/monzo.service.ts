@@ -2,7 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 import {
   Transaction,
   TransactionSource,
-  TransactionType,
+  assignTransactionType,
 } from 'src/common/entites/transaction.entity';
 import { HttpService } from '@nestjs/axios';
 import * as nock from 'nock';
@@ -36,6 +36,8 @@ export class MonzoService extends ITransactionService {
       .data;
     const _transactions = plainToInstance(MonzoTransaction, responseData);
 
+    if (_transactions.length <= 0) return [];
+
     _transactions.forEach(async (transaction) => {
       const errors = await validate(transaction, {
         validationError: { target: false },
@@ -57,8 +59,7 @@ export class MonzoService extends ITransactionService {
         value: transaction.amount,
         currency: transaction.currency,
       },
-      type:
-        transaction.amount < 0 ? TransactionType.Debit : TransactionType.Credit,
+      type: assignTransactionType(transaction.amount),
       reference: transaction.metadata.reference,
       metadata: { source: TransactionSource.Monzo },
     } as Transaction;

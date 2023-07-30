@@ -29,3 +29,6 @@ export enum TransactionSource {
 export type TransactionMetadata = {
   source: string;
 };
+
+export const assignTransactionType = (value: number | string) =>
+  Number(value) < 0 ? TransactionType.Debit : TransactionType.Credit;

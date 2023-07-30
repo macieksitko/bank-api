@@ -6,6 +6,7 @@ import { REVOLUT_TXS } from 'src/common/mocks';
 import {
   Transaction,
   TransactionSource,
+  assignTransactionType,
 } from 'src/common/entites/transaction.entity';
 import { lastValueFrom, map } from 'rxjs';
 import { CurrencyCode } from 'src/common/enums/currency.enum';
@@ -37,6 +38,8 @@ export class RevolutService extends ITransactionService {
 
     const _transactions = plainToInstance(RevolutTransaction, responseData);
 
+    if (_transactions.length <= 0) return [];
+
     _transactions.forEach(async (transaction) => {
       const errors = await validate(transaction, {
         validationError: { target: false },
@@ -58,7 +61,7 @@ export class RevolutService extends ITransactionService {
         value: Number(transaction.amount.value),
         currency: CurrencyCode[transaction.amount.currency],
       },
-      type: null,
+      type: assignTransactionType(transaction.amount.value),
       reference: transaction.reference,
       metadata: { source: TransactionSource.Revolut },
     } as Transaction;
