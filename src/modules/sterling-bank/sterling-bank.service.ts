@@ -8,7 +8,7 @@ import {
 import { STERLING_TXS } from 'src/common/mocks';
 import { lastValueFrom, map } from 'rxjs';
 import * as nock from 'nock';
-import { Currency } from 'src/common/enums/currency.enum';
+import { CurrencyCode } from 'src/common/enums/currency.enum';
 import { plainToInstance } from 'class-transformer';
 import { validate } from 'class-validator';
 import { ITransactionService } from 'src/common/interfaces/transaction-service.interface';
@@ -62,7 +62,7 @@ export class SterlingBankService extends ITransactionService {
       description: transaction.narrative,
       amount: {
         value: Number(transaction.amount),
-        currency: Currency[transaction.currency],
+        currency: CurrencyCode[transaction.currency],
       },
       type: null,
       reference: transaction.reference,

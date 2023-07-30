@@ -1,5 +1,5 @@
 import { IsDateString, IsEnum, IsNumber, IsString } from 'class-validator';
-import { Currency } from 'src/common/enums/currency.enum';
+import { CurrencyCode } from 'src/common/enums/currency.enum';
 import { TransformNumber } from 'src/common/decorators/transform-number.decorator';
 
 enum SterlingBankTransactionDirection {
@@ -11,8 +11,8 @@ export class SterlingBankTransaction {
   @IsString()
   id: string;
 
-  @IsEnum(Currency)
-  currency: Currency;
+  @IsEnum(CurrencyCode)
+  currency: CurrencyCode;
 
   @IsNumber()
   @TransformNumber()

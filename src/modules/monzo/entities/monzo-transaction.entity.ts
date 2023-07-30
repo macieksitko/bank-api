@@ -5,7 +5,7 @@ import {
   IsString,
   ValidateNested,
 } from 'class-validator';
-import { Currency } from 'src/common/enums/currency.enum';
+import { CurrencyCode } from 'src/common/enums/currency.enum';
 import { Type } from 'class-transformer';
 import { TransformNumber } from 'src/common/decorators/transform-number.decorator';
 
@@ -28,8 +28,8 @@ export class MonzoTransaction {
   @TransformNumber()
   amount: number;
 
-  @IsEnum(Currency)
-  currency: Currency;
+  @IsEnum(CurrencyCode)
+  currency: CurrencyCode;
 
   @ValidateNested()
   @Type(() => MonzoTransactionMetadata)

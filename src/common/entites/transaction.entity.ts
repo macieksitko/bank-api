@@ -1,4 +1,4 @@
-import { Currency } from '../enums/currency.enum';
+import { CurrencyCode } from '../enums/currency.enum';
 
 export class Transaction {
   id: string;
@@ -17,7 +17,7 @@ export enum TransactionType {
 
 export type TransactionAmount = {
   value: number;
-  currency: Currency;
+  currency: CurrencyCode;
 };
 
 export enum TransactionSource {

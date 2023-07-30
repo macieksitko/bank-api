@@ -7,7 +7,7 @@ import {
   ValidateNested,
 } from 'class-validator';
 import { Type } from 'class-transformer';
-import { Currency } from 'src/common/enums/currency.enum';
+import { CurrencyCode } from 'src/common/enums/currency.enum';
 import { TransformNumber } from 'src/common/decorators/transform-number.decorator';
 
 enum RevolutTransactionState {
@@ -20,8 +20,8 @@ class RevolutTransactionAmount {
   @TransformNumber()
   value: number;
 
-  @IsEnum(Currency)
-  currency: Currency;
+  @IsEnum(CurrencyCode)
+  currency: CurrencyCode;
 }
 
 class RevolutTransactionCounterParty {

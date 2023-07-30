@@ -8,7 +8,7 @@ import {
   TransactionSource,
 } from 'src/common/entites/transaction.entity';
 import { lastValueFrom, map } from 'rxjs';
-import { Currency } from 'src/common/enums/currency.enum';
+import { CurrencyCode } from 'src/common/enums/currency.enum';
 import { plainToInstance } from 'class-transformer';
 import { validate } from 'class-validator';
 import { ITransactionService } from 'src/common/interfaces/transaction-service.interface';
@@ -56,7 +56,7 @@ export class RevolutService extends ITransactionService {
       description: 'Payment to ' + transaction.counterparty.name,
       amount: {
         value: Number(transaction.amount.value),
-        currency: Currency[transaction.amount.currency],
+        currency: CurrencyCode[transaction.amount.currency],
       },
       type: null,
       reference: transaction.reference,
