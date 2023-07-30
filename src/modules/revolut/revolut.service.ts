@@ -13,20 +13,23 @@ import { plainToInstance } from 'class-transformer';
 import { validate } from 'class-validator';
 import { ITransactionService } from 'src/common/interfaces/transaction-service.interface';
 
+const NOCK_API = 'http://api/revolut';
+const GET_NOCK_API_TRANSACTIONS = NOCK_API + '/transactions';
+
 @Injectable()
 export class RevolutService extends ITransactionService {
   private readonly logger = new Logger(RevolutService.name);
 
   constructor(private readonly httpService: HttpService) {
     super();
-    nock('http://api/revolut').get('/transactions').reply(200, {
+    nock(NOCK_API).get('/transactions').reply(200, {
       data: REVOLUT_TXS,
     });
   }
 
   public async getTransactions(): Promise<Transaction[]> {
     const response = this.httpService
-      .get('http://api/revolut/transactions')
+      .get(GET_NOCK_API_TRANSACTIONS)
       .pipe(map((response) => response.data));
 
     const responseData: RevolutTransaction[] = (await lastValueFrom(response))

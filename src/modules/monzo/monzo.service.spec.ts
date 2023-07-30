@@ -2,8 +2,6 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { MonzoService } from './monzo.service';
 import { HttpModule } from '@nestjs/axios';
 import { MONZO_TXS } from 'src/common/mocks';
-import { Transaction } from 'src/common/entites/transaction.entity';
-import { arrayNotEmpty } from 'class-validator';
 
 describe('MonzoService', () => {
   let service: MonzoService;

@@ -20,6 +20,7 @@ export class TransactionsService {
     params: GetTransactionsParams,
   ): Promise<GetTransactionsDto> {
     const transactions: Transaction[] = [];
+
     if (isEmpty(params.source) || params.source === TransactionSource.Monzo) {
       transactions.push(...(await this.monzoService.getTransactions()));
     }
